@@ -17,11 +17,11 @@ module tt_um_c7_array_mult (
 );
 
   wire [3:0] a, b;
-  wire [7:0] c;
+  wire [7:0] p;
 
   assign n = ui_in[3:0];
   assign m = ui_in[7:4];
-  assign p = uo_out[7:0];
+
 
   // All output pins must be assigned. If not used, assign to 0.
   assign uio_out = 0;
@@ -56,6 +56,7 @@ module tt_um_c7_array_mult (
     full_adder inst11 (fa13_out, m2q3, int_sig7, p[5], int_sig9);
     full_adder inst12 (fa23_in, m3q3, int_sig9, p[6], p[7]);
 
+    assign uo_out[7:0] = p;
    
 
   // List all unused inputs to prevent warnings

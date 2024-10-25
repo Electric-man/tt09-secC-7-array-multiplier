@@ -25,7 +25,7 @@ async def test_project(dut):
 
     dut._log.info("Test project behavior")
 
-    #Test_1
+ ######   #Test_1
     # Set the input values you want to test
     dut.ui_in.value = 0b0001_0001
     
@@ -41,7 +41,7 @@ async def test_project(dut):
     # one or more clock cycles, and asserting the expected output values.
 
 
-    #Test_2
+#######    #Test_2
     # Set the input values you want to test
     dut.ui_in.value = 0b1000_0010
     
@@ -57,7 +57,7 @@ async def test_project(dut):
     # one or more clock cycles, and asserting the expected output values.
 
 
-    #Test_3
+######    #Test_3
     # Set the input values you want to test
     dut.ui_in.value = 0b1001_0100
     
@@ -73,7 +73,7 @@ async def test_project(dut):
     # one or more clock cycles, and asserting the expected output values.
 
 
-    #Test_4
+######    #Test_4
     # Set the input values you want to test
     dut.ui_in.value = 0b1111_0010
     
