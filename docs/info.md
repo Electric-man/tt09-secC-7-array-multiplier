@@ -9,12 +9,14 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+It works by multiplying two 4-bit binary numbers using full adders and outputing the product.
+
+![Block Diagram](C7_array_mult_diagram.png)
 
 ## How to test
 
-Explain how to use your project
+To test, you input two 4-bit binary numbers and should get the product of it.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None

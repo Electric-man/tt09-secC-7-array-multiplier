@@ -27,7 +27,7 @@ async def test_project(dut):
 
     #Test_1
     # Set the input values you want to test
-    dut.ui_in.value = 20
+    dut.ui_in.value = 0b0001_0001
     
 
     # Wait for one clock cycle to see the output values
@@ -35,7 +35,7 @@ async def test_project(dut):
 
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
-    assert dut.uo_out.value == 50
+    assert dut.uo_out.value == 1
 
     # Keep testing the module by changing the input values, waiting for
     # one or more clock cycles, and asserting the expected output values.
@@ -43,7 +43,7 @@ async def test_project(dut):
 
     #Test_2
     # Set the input values you want to test
-    dut.ui_in.value = 20
+    dut.ui_in.value = 0b1000_0010
     
 
     # Wait for one clock cycle to see the output values
@@ -51,7 +51,39 @@ async def test_project(dut):
 
     # The following assersion is just an example of how to check the output values.
     # Change it to match the actual expected output of your module:
-    assert dut.uo_out.value == 50
+    assert dut.uo_out.value == 16
+
+    # Keep testing the module by changing the input values, waiting for
+    # one or more clock cycles, and asserting the expected output values.
+
+
+    #Test_3
+    # Set the input values you want to test
+    dut.ui_in.value = 0b1001_0100
+    
+
+    # Wait for one clock cycle to see the output values
+    await ClockCycles(dut.clk, 1)
+
+    # The following assersion is just an example of how to check the output values.
+    # Change it to match the actual expected output of your module:
+    assert dut.uo_out.value == 36
+
+    # Keep testing the module by changing the input values, waiting for
+    # one or more clock cycles, and asserting the expected output values.
+
+
+    #Test_4
+    # Set the input values you want to test
+    dut.ui_in.value = 0b1111_0010
+    
+
+    # Wait for one clock cycle to see the output values
+    await ClockCycles(dut.clk, 1)
+
+    # The following assersion is just an example of how to check the output values.
+    # Change it to match the actual expected output of your module:
+    assert dut.uo_out.value == 7
 
     # Keep testing the module by changing the input values, waiting for
     # one or more clock cycles, and asserting the expected output values.
