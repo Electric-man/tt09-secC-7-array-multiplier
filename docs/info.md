@@ -15,7 +15,8 @@ It works by multiplying two 4-bit binary numbers using full adders and outputing
 
 ## How to test
 
-To test, you input two 4-bit binary numbers and should get the product of it.
+To test, you open the test.py file and input two 4-bit binary numbers. The first 4 are the first number and
+the last 4 are the second number. The expected value should be the product of the two numbers. 
 
 ## External hardware
 
