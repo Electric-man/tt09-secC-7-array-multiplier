@@ -16,10 +16,10 @@ module tt_um_c7_array_mult (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-  wire [3:0] a, b;
+  wire [3:0] m, q;
   wire [7:0] p;
 
-  assign n = ui_in[3:0];
+  assign q = ui_in[3:0];
   assign m = ui_in[7:4];
 
 
